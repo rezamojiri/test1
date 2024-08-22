@@ -4,14 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>my project</title>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="/srs/materialize/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="/srs/css/util.css"
   <link rel="stylesheet" href="/srs/css/style.css">
 </head>
 <body>
-    <nav>
+  <!-- _____navbar section_______________________start___ -->
+   
+    <nav class="  blue darken-4 z-depth-3">
         <div class="nav-wrapper">
-          <a href="#!" class="brand-logo">Logo</a>
+          <a href="#!" class="brand-logo">Home</a>
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
           <ul class="right hide-on-med-and-down">
             <li><a href="sass.html">Sass</a></li>
@@ -23,11 +26,36 @@
       </nav>
     
       <ul class="sidenav" id="mobile-demo">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
+        li><div class="user-view">
+          <div class="background">
+            <img src="/srs/image/bk1.jpg" class="w-">
+          </div>
+          <a href="#user"><img class="circle" src="/srs/image/rexo.png"></a>
+          <a href="#name"><span class="white-text name">reza mojiri</span></a>
+          <a href="#email"><span class="white-text email">rezamojiri@gmail.com</span></a>
+        </div>
+      </li>
+        <li><a href="#!"><i class="material-icons">cloud</i>First Link </a></li>
+        <li><a href="https://t.me/Rexo66"><i class="material-icons">near_me</i>My Telegram</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="subheader">Page</a></li>
+        <li><a class="waves-effect" href="#!">Home</a></li>
+          <li><a class="waves-effect" href="#!">User</a></li>
       </ul>
+<!-- _____navbar section_______________________end___ -->
+
+
+ <!-- _____home section_______________________start___ -->
+
+<section class="flex-c-m flex-col sizefull p-r-20 p-l-20 p-t-80">
+<img src="/srs/image/logo1.png" class="w-full max-w-300">
+
+<a href="/user.html" class="waves-effect waves-light btn blue darken-4 w-full max-w-300 mb-10 rounded_pill">User manager</a>
+<a href="https://t.me/Rexo66" class="waves-effect waves-light btn blue darken-4 w-full max-w-300 m-t-10 mb-10 rounded_pill">Programming Tutorial</a>
+</section>
+
+<!-- _____home section_______________________end___ -->
+
 
     <script src="/srs/materialize/js/materialize.min.js"></script> 
     <script src = "/srs/js/app.js"></script>
