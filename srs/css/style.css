@@ -1,0 +1,18 @@
+@media(min-width:600px){
+    .top_navbar{
+        box-shadow: 0 0 50px gray !important;
+    }
+
+    #top_actions_section{
+        display: flex !important;
+        align-items: center !important;
+    }
+}
+
+.users_list_item.active .users_list_arrow_icon{
+    transform: rotate(180deg);
+}
+
+.users_list_item.active , .users_list_item.active .collapsible-header{
+    background-color: rgba(204, 199, 199, 0.322);
+}
