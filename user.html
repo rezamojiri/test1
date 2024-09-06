@@ -6,23 +6,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/srs/materialize/css/materialize.min.css">
+  <link rel="stylesheet" href="/srs/materialize/css/materialize-rtl.css">
   <link rel="stylesheet" href="/srs/css/util.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="/srs/css/style.css">
   <title>my project</title>
 </head>
 
-<body>
+<body dir="rtl">
   <!-- _____navbar section_______________________start___ -->
 
   <nav class="blue darken-4 z-depth-3">
     <div class="nav-wrapper">
-      <a href="#!" class=" hide-on-med-and-up">Users management</a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul class="hide-on-med-and-down">
-        <li><a href="/">Home</a></li>
-        <li><a href="/user.html">User manager</a></li>
-        <li><a href="https://t.me/Rexo66">My telegram</a></li>
+      <a href="#!" class="hide-on-med-and-up">Users management</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+      <ul class="hide-on-med-and-down dis-flex">
+        <li><a href="/">خانه</a></li>
+        <li><a href="/user.html">مدیریت کاربران</a></li>
+        <li><a href="https://t.me/Rexo66">ارتباط با ما</a></li>
         <li><a href="https://t.me/Rexo66"></a></li>
       </ul>
     </div>
@@ -38,24 +39,24 @@
       <a><span class="white-text email">rezamojiri@gmail.com</span></a>
     </div>
     </li>
-    <li><a href="#!"><i class="material-icons">cloud</i>First Link </a></li>
-    <li><a href="https://t.me/Rexo66"><i class="material-icons">near_me</i>My Telegram</a></li>
+    <li><a href="#!"><i class="material-icons right sidenav_link_icon">cloud</i>لینک اول</a></li>
+    <li><a href="https://t.me/Rexo66"><i class="material-icons right sidenav_link_icon">near_me</i>ارتباط با ما</a></li>
     <li>
       <div class="divider"></div>
     </li>
-    <li><a class="subheader">Page</a></li>
-    <li><a class="waves-effect" href="#!">Home</a></li>
-    <li><a class="waves-effect" href="/user.html">User</a></li>
+    <li><a class="subheader">صفحه</a></li>
+    <li><a class="waves-effect" href="#!">خانه</a></li>
+    <li><a class="waves-effect" href="/user.html">کاربر</a></li>
   </ul>
   <!-- _____navbar section_______________________end___ -->
 
 
    <!-- content section ---------start-------------------- -->
     
-   <section id="top_actions_section" class="row m-b-0" >
+   <section id="top_actions_section" class="row m-b-0 container" >
     <!-- ____________add button______ -->
-    <div class="p-l-10 p-r-10 p-t-10 col s12 m3 l2">
-      <button class="waves-effect waves-light btn blue darken-2 p-l-30 p-r-30 w-full rounded_pill flex-c">
+    <div id="add_user_buttom" class="p-l-10 p-r-10 p-t-10 col s12 m3 l2">
+      <button id="add_user_button" class="waves-effect waves-light btn blue darken-2 p-l-30 p-r-30 w-full rounded_pill flex-c">
         <i class="material-icons m-r-5">add</i>
         Add User
        </button>
@@ -155,7 +156,7 @@
           </td>
         </tr>
         <tr>
-          <td>1</td>
+          <td>2</td>
           <td>Reza Mojiri</td>
           <td>reza</td>
           <td>rezamojiri@gmail.com</td>
@@ -168,11 +169,11 @@
           </td>
         </tr>
         <tr>
-          <td>1</td>
-          <td>Reza Mojiri</td>
-          <td>reza</td>
+          <td>3</td>
+          <td>رضا مجیری</td>
+          <td>رضا</td>
           <td>rezamojiri@gmail.com</td>
-          <td>iran-esfahan ... ...</td>
+          <td>اصفهان,....</td>>
           <td>
             <i class="material-icons orange-text darken-3 m-l-5 m-r-5 hov-pointer">edit</i>
             <i class="material-icons red-text m-l-5 m-r-5 hov-pointer">
@@ -181,11 +182,11 @@
           </td>
         </tr>
         <tr>
-          <td>1</td>
-          <td>Reza Mojiri</td>
-          <td>reza</td>
+          <td>4</td>
+          <td>رضا مجیری</td>
+          <td>رضا</td>
           <td>rezamojiri@gmail.com</td>
-          <td>iran-esfahan ... ...</td>
+          <td>اصفهان,....</td>
           <td>
             <i class="material-icons orange-text darken-3 m-l-5 m-r-5 hov-pointer">edit</i>
             <i class="material-icons red-text m-l-5 m-r-5 hov-pointer">
@@ -198,6 +199,63 @@
   </div>
 
 </section>
+<div class="pagination_container container p-l-9 p-r-9 p-t-15 p-b-10 flex-sb-m pos-fixed left-0 right-0 bottom-0 z-depth-4 rounded_top_30">
+
+  <div class="pagination_item_counts flex-l p-l-10 flex-l-m ">
+    showing
+    <span class="m-l-5 m-r-5 max-w-50">
+      <input type="number" class="blue-text darken-2 no-border center-align m-b-0" value="10">
+    </span>
+    of 
+    <span class="blue-text darken-2 m-l-5 m-r-5">100</span>
+  </div>
+
+  <div class="pgination_buttons">
+    <i class="material-icons blue darken-2 m-l-5 m-r-5 p-l-5 p-r-5 p-t-1 p-b-3 waves-effect waves-light white-text rounded_pill">keyboard_arrow_right</i>
+    <i class="material-icons blue darken-2 m-l-5 m-r-5 p-l-5 p-r-5 p-t-1 p-b-3 waves-effect waves-light white-text rounded_pill">keyboard_arrow_left</i>
+  </div>
+
+</div>
+
+</section>
+
+<div class="add_user_modal_back dis-none"></div>
+  <div class="add_user_modal container rounded_top_30 trans-0-3">
+    <div class="row p-t-10 p-b-10 p-r-40 p-l-40 center-on-small-only">
+      <h5>
+        <i class="material-icons m-r-10 m-l-10 pos-relative top-4">person_add</i>
+        Add User
+      </h5>
+
+      <form>
+        <div class="input-field col s12">
+          <input id="name" type="text" class="validate" />
+          <label for="name">name:</label>
+        </div>
+        <div class="input-field col s12">
+          <input id="username" type="text" class="validate" />
+          <label for="username">username: </label>
+        </div>
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate" />
+          <label for="email">Email</label>
+        </div>
+
+        
+        <button
+          type="button"
+          class="waves-effect waves-light btn blue darken-1 m-t-20 m-b-10 w-full max-w-250 rounded_pill"
+        >
+          submit
+        </button>
+
+
+
+      </form>
+
+
+    </div>
+  </div>
 
 
 <!-- content section ---------end------- -->

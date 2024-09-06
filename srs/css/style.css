@@ -1,3 +1,17 @@
+@font-face {
+    font-family: "BYekan";
+    src: url("../fonts/BYekan/BYekan-webfont.eot") format("eot"),
+        url("../fonts/BYekan/BYekan-webfont.woff") format("woff"),
+        url("../fonts/BYekan/BYekan-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    direction: rtl;
+    font-family: "BYekan";
+}
+
 @media(min-width:600px){
     .top_navbar{
         box-shadow: 0 0 50px gray !important;
@@ -19,4 +33,37 @@
 
 table.highlight > tbody > tr:hover {
     background-color: #bbdefb;
+}
+
+.container{
+    width: 100% !important;
+}
+
+.add_user_modal_back{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.add_user_modal{
+    position: fixed;
+    height: 70vh;
+    background-color: white;
+    bottom: 0;
+    z-index: 1000;
+    left: 0;
+    right: 0;
+    bottom: -70vh;
+}
+.add_user_modal.show{
+    box-shadow: 0 0 10px blue;
+    bottom: 0;
+}
+
+.sidenav_link_icon{
+    margin: 0 0 0 25px !important;
 }
