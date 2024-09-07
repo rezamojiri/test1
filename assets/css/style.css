@@ -67,3 +67,18 @@ table.highlight > tbody > tr:hover {
 .sidenav_link_icon{
     margin: 0 0 0 25px !important;
 }
+
+.user_list_section{
+    height: calc(100vh - 258px);
+    overflow: auto;
+}
+
+.page_number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+}
